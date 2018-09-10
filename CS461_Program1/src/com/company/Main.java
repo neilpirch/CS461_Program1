@@ -17,13 +17,13 @@ public class Main {
         double[][] data = new double[4][500];
 
         int scores[] = {0, 0, 0, 0, 0};
-        
+
         int i, j, k, l;
-        int reps[] = {100, 100, 100};
+        int reps[] = {20, 100, 200};
 
         int w, x = 0;
 
-        for (l = 0; l < 20; l++) {
+        for (l = 0; l < 500; l++) {
             a = new DeckOfCards();
 
             a.shuffle(1000);
@@ -108,12 +108,6 @@ public class Main {
             }
         }
         //System.out.println("Player 1 has won " + x + " out of all simulated hands.");
-        for (i = 0; i <4; i++) {
-            for (j = 0; j < 100; j++) {
-                System.out.print(data[i][j] + " ");
-            }
-            System.out.println();
-        }
 
     }
 }
